@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduskillspoint - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1220;--card:#1a233a;--accent:#00c897}
+*{box-sizing:border-box}
+body{font-family:Poppins;background:var(--bg);color:#fff;margin:0;overflow-x:hidden}
+header{background:#111;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+a{color:var(--accent);text-decoration:none;margin:0 10px}
+
+/* Animations */
+@keyframes fadeUp{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes zoomIn{0%{transform:scale(0.9);opacity:0}100%{transform:scale(1);opacity:1}}
+
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#1a233a,#0b1220);animation:fadeUp 1s ease}
+.hero h1{font-size:40px;margin-bottom:10px}
+.hero p{opacity:0.8}
+
+.container{max-width:1100px;margin:auto;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.card{
+background:var(--card);
+padding:20px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+animation:zoomIn 0.8s ease;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+img{width:100%;border-radius:10px;margin-top:10px;transition:0.4s}
+.card:hover img{transform:scale(1.05)}
+
+.icon{font-size:40px;margin-bottom:10px;animation:fadeUp 1s ease}
+
+.section{margin-top:50px;animation:fadeUp 1s ease}
+
+.footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
+color:#aaa;
+animation:fadeUp 1s ease;
+}
+
+/* Button animation */
+.btn{
+display:inline-block;
+padding:8px 15px;
+margin-top:10px;
+border-radius:8px;
+background:var(--accent);
+color:#000;
+transition:0.3s;
+}
+.btn:hover{background:#00e6a8;transform:scale(1.1)}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>Eduskillspoint</h2>
+<div>
+<a href="neet.html">NEET</a>
+<a href="jee.html">JEE</a>
+<a href="about.html">About</a>
+</div>
+</header>
+
+<div class="hero">
+<h1>All Aspirants Study Platform 📚</h1>
+<p>NEET | JEE | SSC | UPSC | Board Exams</p>
+<p>Notes • Study Material • Strategy • Updates</p>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2>Explore Exams</h2>
+<div class="grid">
+
+<div class="card">
+<div class="icon">🧬</div>
+<h3>NEET</h3>
+<img src="neet.jpg">
+<p>Biology, Physics, Chemistry Notes</p>
+<a href="neet.html" class="btn">Open</a>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<h3>JEE</h3>
+<img src="jee.jpg">
+<p>Physics, Maths, Chemistry</p>
+<a href="jee.html" class="btn">Open</a>
+</div>
+
+<div class="card">
+<div class="icon">🏆</div>
+<h3>SSC</h3>
+<img src="ssc.jpg">
+<p>GK, Reasoning, Practice</p>
+</div>
+
+<div class="card">
+<div class="icon">📰</div>
+<h3>Updates</h3>
+<img src="updates.jpg">
+<p>Latest Exam News</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Why Choose Eduskillspoint?</h2>
+<div class="grid">
+<div class="card">📘 Free Study Notes</div>
+<div class="card">🎯 Exam Focused Content</div>
+<div class="card">⚡ Quick Revision</div>
+<div class="card">🔥 Daily Updates</div>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+<p>© 2026 Eduskillspoint | Created by Prince</p>
+</div>
+
+
+
+<!-- PDF DOWNLOAD SECTION -->
+<div class="container">
+  <div class="section">
+    <h2>📥 Download Study PDFs</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>NEET Biology Notes</h3>
+        <p>Download complete PDF</p>
+        <a href="biology.pdf" download class="btn">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>Physics Formula Sheet</h3>
+        <p>Quick revision formulas</p>
+        <a href="physics.pdf" download class="btn">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>Chemistry Notes</h3>
+        <p>Important reactions</p>
+        <a href="chemistry.pdf" download class="btn">Download</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
