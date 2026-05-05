@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduskillspoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins', sans-serif; background:#f5f7fa; }
+
+    header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:15px 40px; background:#0A192F; color:#fff;
+      position:sticky; top:0;
+    }
+    header h1 { font-size:22px; }
+    nav a { margin:0 10px; color:#fff; text-decoration:none; font-size:14px; }
+
+    .hero {
+      text-align:center; padding:100px 20px;
+      background:linear-gradient(135deg,#0A192F,#00C897);
+      color:white;
+    }
+    .hero h2 { font-size:40px; margin-bottom:10px; }
+    .hero p { margin-bottom:20px; }
+    .hero button {
+      padding:12px 25px; border:none;
+      background:#fff; color:#0A192F;
+      border-radius:8px; cursor:pointer; font-weight:600;
+    }
+
+    .categories {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px; padding:50px;
+    }
+    .card {
+      background:white; padding:30px;
+      border-radius:15px; text-align:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .card:hover { transform:translateY(-8px); }
+
+    .posts { padding:50px; }
+    .posts h2 { margin-bottom:20px; }
+
+    .post-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .post-card {
+      background:white; padding:20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .post-card:hover { transform:scale(1.03); }
+
+    .about {
+      padding:50px; text-align:center; background:#ffffff;
+    }
+
+    .footer {
+      background:#0A192F; color:#fff;
+      text-align:center; padding:25px;
+    }
+
+    @media(max-width:600px){
+      .hero h2 { font-size:28px; }
+      header { flex-direction:column; gap:10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Eduskillspoint</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">NEET Notes</a>
+    <a href="#">Study Tips</a>
+    <a href="#">Motivation</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Crack NEET with Smart Study</h2>
+  <p>Learn • Grow • Achieve</p>
+  <button>Start Learning</button>
+</section>
+
+<section class="categories">
+  <div class="card">📚 Biology Notes</div>
+  <div class="card">⚡ Physics Concepts</div>
+  <div class="card">🧠 Study Tips</div>
+  <div class="card">🔥 Motivation</div>
+</section>
+
+<section class="posts">
+  <h2>Latest Posts</h2>
+  <div class="post-grid">
+    <div class="post-card">
+      <h3>How I Prepare for NEET Daily</h3>
+      <p>My daily study routine for cracking NEET exam.</p>
+    </div>
+    <div class="post-card">
+      <h3>Best Biology Notes Strategy</h3>
+      <p>How to revise Biology effectively.</p>
+    </div>
+    <div class="post-card">
+      <h3>Top 5 Study Mistakes</h3>
+      <p>Avoid these mistakes to boost your score.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>Hi, I am Prince. I share NEET preparation tips, notes, and strategies to help students succeed.</p>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Eduskillspoint | Created by Prince</p>
+</footer>
+
+</body>
+</html>
